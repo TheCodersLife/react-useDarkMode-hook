@@ -16,6 +16,18 @@ const useDarkMode = () => {
 		return;
 	}, [enabled]);
 
+	useEffect(() => {
+		const isDarkMode = window.matchMedia(
+			'(prefers-color-scheme: dark)'
+		).matches;
+		const isLightMode = window.matchMedia(
+			'(prefers-color-scheme: light)'
+		).matches;
+
+		if (isDarkMode) setEnabled(true);
+		if (isLightMode) setEnabled(false);
+	}, []);
+
 	return { enabled, setEnabled };
 };
 
