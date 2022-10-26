@@ -1,0 +1,23 @@
+.box {
+	background-color: rgb(252, 0, 0);
+	width: 100%;
+	height: 200px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@include isDark {
+		background-color: #555;
+	}
+}
+
+.text {
+	font-size: 26px;
+	font-family: 'Cascadia Code', serif;
+	color: #fff;
+
+	@include isDark {
+		color: rgb(0, 0, 0);
+	}
+}
