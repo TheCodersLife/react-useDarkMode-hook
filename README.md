@@ -1,3 +1,5 @@
 # react-hook-useDarkMode
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vitejs-vite-bzyfg7)
+React hook for toggle dark mode easily
+
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-hook-usedarkmode)
